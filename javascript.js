@@ -1,15 +1,15 @@
                       console.log('------------- # 4')
 
-// let ask = (question, yes, no) => {
-//     if (confirm(question)) yes()
-//     else no();
-//   }
+let ask = (question, yes, no) => {
+    if (confirm(question)) yes()
+    else no();
+  }
 
-// ask(
-//     "Вы согласны?",
-//     () => console.log("Вы согласились."), 
-//     () => console.log("Вы отменили выполнение.")
-//   );
+ask(
+    "Вы согласны?",
+    () => console.log("Вы согласились."), 
+    () => console.log("Вы отменили выполнение.")
+  );
   
   
                           console.log('------------- # 5')
@@ -41,31 +41,22 @@ users = [
 let names = users.map (item => item.name)
 console.log( names ); 
 
+                                console.log('------------- # 9')
 
-                            console.log('------------- # 9')
- 
- arr = [5,3,8,1];
-    function filterRangeInPlace(arr, a,b) {
-     
-      let result = [];
-      let i = 0;
-    
-      for (const arrelement of arr) {
-        i = 0; i<arr.length; i++ 
-          if (a < arr[i] < b) {
-              result.splice(arr[i]);
-          }
+function filterRangeInPlace(ar, a, b) {
+  
+  for (let i=0; i<ar.length; i++){
+      if (a<= ar[i] <=b) {
+          ar.splice (i, 1);
       }
-      console.log (result);
-      }
-      
-    
+  }
+}
+let ar = [5, 3, 8, 1];
+console.log(ar);
 
-console.log (arr);
-console.log (filterRangeInPlace (arr, 1,4));
-
-
-    
+filterRangeInPlace(ar, 1, 4);
+console.log(ar);
+                          
                           console.log('------------- # 10') 
 
 function lineMas (...arg) {
